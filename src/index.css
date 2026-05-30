@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-950 text-gray-100 overflow-x-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  * {
+    @apply selection:bg-primary-500 selection:text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-600 rounded-full;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-dark-900/40 backdrop-blur-xl border border-dark-700/50;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg
+           hover:from-primary-400 hover:to-primary-500 transition-all duration-300
+           shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40
+           transform hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-dark-800 text-gray-100 font-semibold rounded-lg border border-dark-600
+           hover:bg-dark-700 hover:border-primary-500/50 transition-all duration-300
+           transform hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .card {
+    @apply glass rounded-2xl p-6 transition-all duration-300
+           hover:border-primary-500/30 hover:shadow-xl hover:shadow-primary-500/10;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-400 max-w-2xl mx-auto;
+  }
+}
