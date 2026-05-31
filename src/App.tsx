@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import ChatBot from './components/ChatBot';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Moon, Sun, ChevronDown, Download, Mail, Sparkles,
@@ -895,6 +896,7 @@ function App() {
             <ContactSection />
           </main>
           <Footer />
+          <ChatBot />
         </>
       )}
     </div>
