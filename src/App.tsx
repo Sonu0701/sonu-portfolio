@@ -305,7 +305,7 @@ const HeroSection = () => {
           <motion.a href="#projects" className="btn-primary" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             View Projects
           </motion.a>
-          <motion.a href="https://drive.google.com/file/d/12iGRWgnhpIDVQGOAGGhnv8E_OVYJ4dKy/view?usp=sharing" download className="btn-secondary flex items-center" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.a href="https://drive.google.com/file/d/1Z6cyM7SiTffbftNKZLG51e2qorBcQ76F/view?usp=sharing" download className="btn-secondary flex items-center" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Download className="w-4 h-4 mr-2" />
             Download Resume
           </motion.a>
